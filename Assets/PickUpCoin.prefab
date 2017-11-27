@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114221508200440634}
   - component: {fileID: 114213425101036220}
   - component: {fileID: 114842328236168840}
+  - component: {fileID: 114445763852879506}
   m_Layer: 0
   m_Name: PickUpCoin
   m_TagString: Untagged
@@ -136,7 +137,7 @@ MonoBehaviour:
   ignoreTimescale: 0
 --- !u!114 &114213425101036220
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1326193420372674}
@@ -155,7 +156,7 @@ MonoBehaviour:
   SettingsStringOLD: 
 --- !u!114 &114221508200440634
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1326193420372674}
@@ -168,9 +169,27 @@ MonoBehaviour:
   tagFilter:
   - Player
   FireOn: 1
---- !u!114 &114678579687749618
+--- !u!114 &114445763852879506
 MonoBehaviour:
   m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1326193420372674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c43743931d28f43f89eced820d907351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 3
+  indentLevel: 0
+  messageTarget: 1
+  _message:
+    stringRef: {fileID: 0}
+    stringVal: coin-collected
+  messageOLD: 
+--- !u!114 &114678579687749618
+MonoBehaviour:
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1326193420372674}
@@ -193,6 +212,7 @@ MonoBehaviour:
   eventHandler: {fileID: 114221508200440634}
   commandList:
   - {fileID: 114213425101036220}
+  - {fileID: 114445763852879506}
   - {fileID: 114842328236168840}
 --- !u!114 &114820782074036574
 MonoBehaviour:
@@ -220,7 +240,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 114678579687749618}
   selectedCommands:
-  - {fileID: 114842328236168840}
+  - {fileID: 114445763852879506}
   variables: []
   description: 
   stepPause: 0
@@ -234,7 +254,7 @@ MonoBehaviour:
   luaBindingName: flowchart
 --- !u!114 &114842328236168840
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1326193420372674}

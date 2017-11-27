@@ -717,6 +717,13 @@ GameObject:
   - component: {fileID: 806220833}
   - component: {fileID: 806220834}
   - component: {fileID: 806220832}
+  - component: {fileID: 806220837}
+  - component: {fileID: 806220836}
+  - component: {fileID: 806220838}
+  - component: {fileID: 806220840}
+  - component: {fileID: 806220839}
+  - component: {fileID: 806220841}
+  - component: {fileID: 806220842}
   m_Layer: 0
   m_Name: MainFlowchart
   m_TagString: Untagged
@@ -749,10 +756,12 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 806220833}
+  - {fileID: 806220837}
   selectedCommands:
-  - {fileID: 806220832}
-  variables: []
+  - {fileID: 806220842}
+  variables:
+  - {fileID: 806220840}
+  - {fileID: 806220839}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -765,7 +774,7 @@ MonoBehaviour:
   luaBindingName: flowchart
 --- !u!114 &806220832
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 806220830}
@@ -835,6 +844,137 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &806220836
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 806220830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fab8abf0343545abbfebd9a7b7b34bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 3
+  indentLevel: 0
+  logType: 0
+  logMessage:
+    stringRef: {fileID: 0}
+    stringVal: Coin collected!
+--- !u!114 &806220837
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 806220830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 66
+    y: 142
+    width: 134
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 2
+  blockName: On Coin Collect
+  description: 
+  eventHandler: {fileID: 806220838}
+  commandList:
+  - {fileID: 806220836}
+  - {fileID: 806220841}
+  - {fileID: 806220842}
+--- !u!114 &806220838
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 806220830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d7d417659cd54a6787f70f763950c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 806220837}
+  message: coin-collected
+--- !u!114 &806220839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 806220830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: TotalPoints
+  value: 0
+--- !u!114 &806220840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 806220830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: PointsPerCoin
+  value: 10
+--- !u!114 &806220841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 806220830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 4
+  indentLevel: 0
+  variable: {fileID: 806220839}
+  setOperator: 2
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 806220840}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+--- !u!114 &806220842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 806220830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78c0367bf08d147bd80b5454de50e9d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 5
+  indentLevel: 0
+  targetTextObject: {fileID: 1996042153}
+  text:
+    stringRef: {fileID: 0}
+    stringVal: '{$TotalPoints} Punti'
+  description: 
+  _textObjectObsolete: {fileID: 0}
 --- !u!1001 &870869907
 Prefab:
   m_ObjectHideFlags: 0
@@ -908,7 +1048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1959745773}
+  selectedFlowchart: {fileID: 806220831}
 --- !u!4 &873473333
 Transform:
   m_ObjectHideFlags: 1
@@ -1588,6 +1728,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1654506343}
     m_Modifications:
+    - target: {fileID: 114820782074036574, guid: 98fb8cfc760624d2bb5cc23c67d0d433,
+        type: 2}
+      propertyPath: selectedCommands.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4583666469922012, guid: 98fb8cfc760624d2bb5cc23c67d0d433, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1624,9 +1769,20 @@ Prefab:
       propertyPath: m_Name
       value: PickUpCoin01
       objectReference: {fileID: 0}
+    - target: {fileID: 114820782074036574, guid: 98fb8cfc760624d2bb5cc23c67d0d433,
+        type: 2}
+      propertyPath: selectedCommands.Array.data[0]
+      value: 
+      objectReference: {fileID: 1530742903}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 98fb8cfc760624d2bb5cc23c67d0d433, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1530742903 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114445763852879506, guid: 98fb8cfc760624d2bb5cc23c67d0d433,
+    type: 2}
+  m_PrefabInternal: {fileID: 1530742902}
+  m_Script: {fileID: 11500000, guid: c43743931d28f43f89eced820d907351, type: 3}
 --- !u!1001 &1571884312
 Prefab:
   m_ObjectHideFlags: 0
@@ -2052,12 +2208,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4583666469922012, guid: 98fb8cfc760624d2bb5cc23c67d0d433,
     type: 2}
   m_PrefabInternal: {fileID: 1959745771}
---- !u!114 &1959745773 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114820782074036574, guid: 98fb8cfc760624d2bb5cc23c67d0d433,
-    type: 2}
-  m_PrefabInternal: {fileID: 1959745771}
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
 --- !u!1 &1996042153
 GameObject:
   m_ObjectHideFlags: 0
