@@ -1,3 +1,15 @@
-# Fungus 3D Bootstrap
+# Tutorial - Unity3D and Fungus
 
-A basic Unity3D object using [Fungus](http://fungusgames.com/) in a 3D environment.
+This project is used as a starting point for my [Tech.io](https://tech.io/) tutorial on using [Fungus](http://fungusgames.com/) in a 3D environment.
+
+## Link
+
+You can find the tutorial here: [https://tech.io/playgrounds/12965/unity3d-and-fungus-tutorial-pickups](https://tech.io/playgrounds/12965/unity3d-and-fungus-tutorial-pickups/welcome)
+
+### Italian Version
+
+E' disponibile una versione in italiano del tutorial al seguente indirizzo: [https://tech.io/playgrounds/10655/tutorial-unity3d-e-fungus-pickups](https://tech.io/playgrounds/10655/tutorial-unity3d-e-fungus-pickups/benvenuti)
+
+## Contacts
+
+For more informations or bug reports, you can contact me on my website: [matcosecchi.it](http://marcosecchi.it)
