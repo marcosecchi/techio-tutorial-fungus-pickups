@@ -6,9 +6,9 @@ This project is used as a starting point for my [Tech.io](https://tech.io/) tuto
 
 You can find the tutorial here: [https://tech.io/playgrounds/12965/unity3d-and-fungus-tutorial-pickups](https://tech.io/playgrounds/12965/unity3d-and-fungus-tutorial-pickups/welcome)
 
-### Italian Version
+#### Italian Version
 
-E' disponibile una versione in italiano del tutorial al seguente indirizzo: [https://tech.io/playgrounds/10655/tutorial-unity3d-e-fungus-pickups](https://tech.io/playgrounds/10655/tutorial-unity3d-e-fungus-pickups/benvenuti)
+_E' disponibile una versione in italiano del tutorial al seguente indirizzo: [https://tech.io/playgrounds/10655/tutorial-unity3d-e-fungus-pickups](https://tech.io/playgrounds/10655/tutorial-unity3d-e-fungus-pickups/benvenuti)_
 
 ## Contacts
 
