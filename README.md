@@ -12,4 +12,4 @@ _E' disponibile una versione in italiano del tutorial al seguente indirizzo: [ht
 
 ## Contacts
 
-For more informations or bug reports, you can contact me on my website: [matcosecchi.it](http://marcosecchi.it)
+For more informations or bug reports, you can contact me on my website: [marcosecchi.it](http://marcosecchi.it)
